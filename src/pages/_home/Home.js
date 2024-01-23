@@ -7,10 +7,11 @@ import fetch from "../../utils/fetch";
 export default function Home() {
     const [products, setProducts] = useState(null);
     useEffect(()=>{
-        fetch("localhost:8000/api/products").then((data)=>{
-            console.log(data)
+        fetch("http://localhost:8000/api/products").then((data)=>{
+            setProducts(data)
         })
     },[])
+
     return (
 
         <>
