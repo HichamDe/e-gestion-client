@@ -3,8 +3,7 @@ export default function Dahboard(){
         <div class="bg-gray-100 xl:h-screen dark:bg-gray-800">
         <div class="body-content" x-data="{ open: true }">
             <div class="relative lg:block navbar-menu">
-                <nav x-bind:class="! open ? 'w-0' : 'w-[280px]'"
-                    class="fixed top-0 transition-all lg:mt-0 z-40 mt-16 left-0 dark:bg-gray-900 bottom-0 flex flex-col w-[280px] lg:border-none border-r border-gray-200 dark:border-gray-800 bg-gray-50 overflow-hidden "
+                <nav className="fixed top-0 transition-all lg:mt-0 z-40 mt-16 left-0 dark:bg-gray-900 bottom-0 flex flex-col w-[280px] lg:border-none border-r border-gray-200 dark:border-gray-800 bg-gray-50 overflow-hidden "
                     id="sidenav">
                     <div class="flex items-center w-full px-4 pt-4 pb-4 border-b border-gray-200 dark:border-gray-700">
                         <a href="#">
@@ -22,7 +21,7 @@ export default function Dahboard(){
                         <div
                             class="relative w-32 h-32 mx-auto -mt-16 overflow-hidden border-4 border-white rounded-full">
                             <img src="https://i.postimg.cc/RhQYkKYk/pexels-italo-melo-2379005.jpg" alt=""
-                                class="object-cover object-top w-full h-32 ">
+                                class="object-cover object-top w-full h-32 "/>
                         </div>
                         <div class="flex justify-center ">
                             <div>
@@ -217,14 +216,13 @@ export default function Dahboard(){
                     </div>
                 </nav>
             </div>
-            <div class="mx-auto transition-all content-wrapper" id="dash"
-                x-bind:class="! open ? 'lg:ml-0' : 'lg:ml-[280px]'">
+            <div class="mx-auto transition-all content-wrapper" id="dash">
                 <section
                     class="sticky top-0 z-40 px-3 py-3 bg-white shadow dark:text-gray-100 dark:bg-gray-900 lg:px-5">
                     <nav class="relative">
                         <div class="flex items-center justify-between">
                             <div>
-                                <button x-on:click="open = ! open"
+                                <button
                                     class="px-2 py-3 text-blue-500 bg-blue-100 rounded dark:text-gray-400 dark:bg-gray-800">
                                     <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -306,7 +304,7 @@ export default function Dahboard(){
                                     </div>
                                     <div x-show="open" id="dropdown_profile"
                                         class="absolute right-0 w-48 mt-3 origin-top-right bg-white rounded shadow  dark:text-gray-100 dark:bg-gray-700"
-                                        style="display: none;">
+                                        >
                                         <div class="py-1">
                                             <a href="#"
                                                 class="flex px-4 py-2 text-sm text-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-gray-100">
