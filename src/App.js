@@ -5,6 +5,7 @@ import Product from "./pages/Product";
 import Dahboard from "./pages/Dashboard";
 import Cart from "./pages/Cart";
 import Commande from "./pages/Commande";
+import Thanks from "./pages/Thanks"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/register" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/commande" element={<Commande />} />
+        <Route path="/Thanks" element={<Thanks />} />
       </Routes>
     </BrowserRouter>
   );
