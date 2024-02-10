@@ -3,12 +3,12 @@ import Hero from "../components/_home/Hero";
 import Footer from "../components/Footer";
 import Product from "../components/_home/Product";
 import { useEffect, useState } from "react";
-import fetch from "../utils/fetch";
+import fetcher from "../utils/fetcher";
 
 export default function Home() {
     const [products, setProducts] = useState(null);
     useEffect(()=>{
-        fetch("http://localhost:8000/api/products").then((data)=>{
+        fetcher("http://localhost:8000/api/products").then((data)=>{
             setProducts(data)
         })
     },[])
