@@ -1,7 +1,4 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
-
 # E-Commerce Store
 
 This project is an e-commerce platform built using React & Laravel . It allows users to browse products, add them to their cart, and proceed to checkout to make purchases.
